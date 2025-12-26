@@ -1,4 +1,4 @@
-### Integrated Predictive Maintenance and Energy Forecasting Platform
+# Integrated Predictive Maintenance and Energy Forecasting Platform
 This repository contains the code, notebook, and documents for an integrated platform that combines predictive maintenance and energy forecasting to optimize industrial operations.
 ​
 
@@ -33,21 +33,21 @@ R
  ≈0.64 on test data.
 ​
 
-# Energy forecasting
+### Energy forecasting
 
 Prophet time-series model on hourly steel plant energy data with calendar and load-type regressors.
 
 Achieves about MAPE ≈ 9.65 and RMSE ≈ 65.36 kWh over a 7‑day hourly horizon.
 ​
 
-# Integrated scheduling
+### Integrated scheduling
 
 Merges RUL predictions with energy cost forecasts using timestamps.
 
 Flags units with RUL < 30 cycles and schedules maintenance in the lowest forecasted energy-cost periods.
 ​
 
-# Real-time dashboard (Streamlit)
+### Real-time dashboard (Streamlit)
 
 Live plots of RUL vs. time for multiple units.
 
@@ -57,22 +57,22 @@ Maintenance alerts and an exportable maintenance schedule (CSV).
 ​
 
 ## Project Structure
-# Source_Notebook.ipynb
+### Source_Notebook.ipynb
 
 End-to-end workflow: data loading, preprocessing, model training, evaluation, and CSV exports (cmapsspredictions.csv, steelenergyforecast.csv, integratedschedule.csv).
 ​
 
-# Integrated_Predictive_Maintenance_and_Energy_Forecasting_Platform_for_Industrial_Optimization.docx
+### Integrated_Predictive_Maintenance_and_Energy_Forecasting_Platform_for_Industrial_Optimization.docx
 
 Full project report: background, datasets, methods, results, and future work.
 ​
 
-# Integrated-Predictive-Maintenance-and-Energy-Forecasting-Platform-for.pptx
+### Integrated-Predictive-Maintenance-and-Energy-Forecasting-Platform-for.pptx
 
 Presentation slides summarizing motivation, approach, and results.
 ​
 
-# realtimedashboardcolab.py (generated from the notebook)
+### realtimedashboardcolab.py (generated from the notebook)
 
 Streamlit app for real-time simulation and visualization.
 
@@ -80,14 +80,14 @@ Integrates PdM and energy forecasting with maintenance alerts and schedule expor
 ​
 
 ## Datasets
-# NASA CMAPSS FD001
+### NASA CMAPSS FD001
 
 Multivariate time series for 100 engines, 23 sensors, 3 operating settings.
 
 Used to compute and predict RUL per engine.
 ​
 
-# Steel Industry Energy Dataset
+### Steel Industry Energy Dataset
 
 Hourly energy usage, power factors, and environmental variables from a steel plant.
 
@@ -98,7 +98,7 @@ Used for short-term energy and cost forecasting.
 ​
 
 ## How to Run
-# Environment setup
+### Environment setup
 
 Python 3.11+
 
@@ -113,7 +113,7 @@ matplotlib
 streamlit, pyngrok (for the dashboard, optional)
 ​
 
-# Reproduce core experiments
+### Reproduce core experiments
 
 Open Source_Notebook.ipynb in Jupyter or Colab.
 
@@ -128,13 +128,13 @@ Generate evaluation metrics and plots.
 Save prediction and schedule CSVs.
 ​
 
-# Run the real-time dashboard (optional)
+### Run the real-time dashboard (optional)
 
 Ensure realtimedashboardcolab.py exists (or export it from the notebook).
 
 Install streamlit and pyngrok.
 
-# Run:
+### Run:
 
 bash
 streamlit run realtimedashboardcolab.py
@@ -152,10 +152,10 @@ R
  ≈0.64 on test engines.
 ​
 
-# Energy forecasting (Prophet): MAPE ≈ 9.65, RMSE ≈ 65.36 kWh for the 7‑day hourly horizon.
+### Energy forecasting (Prophet): MAPE ≈ 9.65, RMSE ≈ 65.36 kWh for the 7‑day hourly horizon.
 ​
 
-# Integrated schedule: successfully proposes maintenance windows where RUL is low and energy cost is minimized.
+### Integrated schedule: successfully proposes maintenance windows where RUL is low and energy cost is minimized.
 ​
 
 ## Future Work
