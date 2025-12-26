@@ -15,7 +15,7 @@ Aligns maintenance actions with low-cost energy periods to reduce downtime and o
 ​
 
 ## Key Features
-# Predictive maintenance (PdM)
+### Predictive maintenance (PdM)
 
 Random Forest Regressor trained on selected CMAPSS sensor and operating features.
 
